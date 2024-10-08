@@ -1,0 +1,453 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Source Serif 4", serif;
+}
+
+header {
+    display: flex;
+    background-image: url("cookie_1.jpg");
+    height: 60vh;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.header-title{
+    color: #393023;
+    font-family: "Marck Script", cursive;
+    font-weight: 500;
+    font-size: 10vw;
+    text-align: center;
+    margin-top: 90pt;
+    margin-left: 80pt;
+}
+
+.header-subtitle{
+    color: #393023;
+    font-family: "Marck Script", cursive;
+    font-weight: 500;
+    font-size: 3.5vw;
+    height: 5px;
+}
+
+main {
+    margin: 30px auto; 
+    padding: 30px; 
+    background-color: #ffffff; 
+    width: 100%;
+}
+
+.sostav{
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    margin-left: 40px;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-image: url("cookie_2.jpg");
+}
+
+.ingred{
+    position: absolute;
+    right: 0;
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+    width: 750pt;
+    font-size: 14;
+}
+
+.cen{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.box{
+    margin-top: 15px;
+    display: inline-block;
+    border: 2px solid black; 
+    padding: 10px; 
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.tip{
+    margin-bottom: 20px;
+    padding-left: 30px;
+    text-align: justify;
+    font-size: 14pt;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    text-indent: 30px;
+    margin-left: 70pt;
+    margin-right: 70pt;
+}
+
+h3 {
+    font-size: 20pt; 
+    color: #393023;
+    margin: 15px 0; 
+    text-align: center; 
+    position: relative;
+    margin-top: 20pt;
+}
+
+p {
+    margin-left: 50px; 
+    margin-right: 50px;
+    font-size: 1.1em; 
+    line-height: 1.8; 
+    text-align: justify;
+    text-indent: 30px;
+}
+
+.reviews {
+    margin-top: 30pt;
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px; 
+}
+.review {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 30%; 
+    text-align: center;
+}
+.review img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover; 
+}
+.review p {
+    font-size: 14px;
+    color: #555;
+    margin: 10px 0;
+}
+.review h4 {
+    font-size: 16px;
+    margin-top: 5px;
+    color: #333;
+    font-family: "Marck Script", cursive;
+}
+
+footer {
+    padding: 40px 20px; 
+    background-color: #1d1a17; 
+    margin-top: 30px; 
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 2em; 
+    color: #ffffff; 
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1280px) {
+    header {
+        height: 50vh;
+    }
+    .sostav{
+        margin-left: 0px;
+        background-position: 10%;
+    }
+    .ingred{
+        width: 550pt;
+        font-size: 8;
+    }
+    h3 {
+        font-size: 16pt; 
+        margin: 8px 0; 
+        text-align: center; 
+        margin-top: 0pt;
+    }
+    
+}
+@media (max-width: 1025px){
+    header {
+        height: 25vh;
+    }
+    .header-title{
+        margin-top: 70pt;
+        margin-left: 80pt;
+    }
+    
+    .sostav{
+        background-position: 30%;
+        height: 45vh;
+    }
+}
+@media (max-height: 600px) {
+    header {
+        height: 50vh;
+    }
+    .header-title{
+        margin-top: 70pt;
+        margin-left: 80pt;
+    }
+    
+    .sostav{
+        background-position: 30%;
+        height: 80vh;
+    }
+}
+@media (max-width: 1000px) {
+    header {
+        height: 20vh;
+    }
+    .header-subtitle{
+        font-weight: 500;
+        font-size: 4vw;
+    }
+    .header-title{
+        font-size: 15vw;
+        text-align: center;
+        margin-top: 50pt;
+        margin-left: 20pt;
+    }
+    .ingred{
+        text-align: center;
+        max-width: 100%;
+        font-size: 14pt;
+        width: 800pt;
+    }
+    .sostav{
+        display: flex;
+        justify-content: center;   
+        background-image: none;
+        margin-bottom: 30pt;
+        height: 45vh;
+    }
+    h3 {
+        font-size: 16pt; 
+        margin: 14px 0px; 
+        margin-top: 14px;
+    }
+}
+@media (max-width: 850px) {
+    header {
+        height: 26vh;
+    }
+    .header-title{
+        margin-top: 50pt;
+        margin-left: 50pt;
+    }
+    .sostav{
+        background-position: 25%;
+    }
+    .ingred{
+        font-size: 10pt;
+    }
+    .box{
+        margin-top: 15px;
+        display: inline-block;
+        padding: 20px; 
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+    .tip{
+        margin-bottom: 20px;
+        padding-left: 30px;
+        text-align: justify;
+        font-size: 12pt;
+        margin-bottom: 25px;
+        margin-top: 25px;
+        text-indent: 30px;
+        margin-left: 40pt;
+        margin-right: 40pt;
+    }
+    .reviews {
+    margin-top: 30pt;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    gap: 20px; 
+    }
+    footer {
+        padding: 10px 10px; 
+        margin-top: 30px; 
+    }
+    footer h2 {
+        font-size: 14pt; 
+        margin-bottom: 0px;
+    }
+}
+@media (max-width: 730px) {
+    header {
+        height: 25vh;
+    }
+    .sostav{
+        height: 60vh;
+    }
+}
+@media (max-width: 615px) {
+    header {
+        height: 24vh;
+    }
+}
+@media (max-width: 590px) {
+    header {
+        height: 22.5vh;
+    }
+    .reviews {
+        margin-top: 2pt;
+        display: flex;
+        justify-content: space-between; 
+        gap: 20px; 
+        flex-direction: column;
+    }
+    .review {
+        width: 100%;
+    }
+}
+@media (max-width: 530px) {
+    main {
+        margin: 0px auto; 
+        padding: 10px; 
+    }
+    header {
+        height: 20vh;
+    }
+    .header-title{
+        font-size: 14vw;
+        margin-top: 40pt;
+        margin-left: 30pt;
+    }
+    .sostav{
+        height: 70vh;
+    }
+    p {
+        margin-left: 50px; 
+        margin-right: 50px;
+        font-size: 12pt; 
+    }
+    .box{
+        margin-top: 10px;
+        padding: 8px; 
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+    .tip{
+        margin-bottom: 20px;
+        padding-left: 30px;
+        text-align: justify;
+        font-size: 12pt;
+        margin-bottom: 2px;
+        margin-top: 2px;
+        text-indent: 30px;
+        margin-left: 10pt;
+        margin-right: 10pt;
+    }
+    
+    footer h2 {
+        margin-bottom: 0px;
+    }
+    
+}
+@media (max-width: 490px) {
+    header {
+        height: 18vh;
+    }
+}
+
+@media (max-width: 440px) {
+    header {
+        height: 15vh;
+    }
+    .header-title{
+        font-size: 14vw;
+        margin-top: 30pt;
+        margin-left: 20pt;
+    }
+    .header-subtitle{
+        font-size: 4vw;
+        height: 5px;
+    }
+    h3 {
+        font-size: 14pt; 
+        margin: 14px 0px; 
+        margin-top: 14px;
+    }
+    .sostav{ 
+        height: 70vh;
+    }
+    .ingred{
+        font-size: 12pt;
+    }
+    p {
+        margin-left: 20px; 
+        margin-right: 20px;
+    } 
+    footer h2 {
+        font-size: 12pt; 
+    }  
+}
+@media (max-width: 379px) {
+    header {
+        height: 13vh;
+    }
+    .header-title{
+        margin-top: 18pt;
+        margin-left: 15pt;
+    }
+    .sostav{
+        height: 100vh;
+    }
+}
+@media (max-width: 350px) {
+    header {
+        height: 12vh;
+    }
+    .sostav{
+        height: 85vh;
+    }
+    .ingred{
+        font-size: 10pt;
+    }
+    p {
+        font-size: 10pt; 
+    } 
+    body {
+        font-size: 10pt;
+    }
+}
+@media (max-width: 290px) {
+    header {
+        height: 12vh;
+    }
+    .sostav{
+        height: 70vh;
+    }
+    .ingred{
+        font-size: 8pt;
+    }
+    p {
+        font-size: 8pt; 
+    }   
+    .tip{
+        font-size: 8pt;
+    }
+    footer h2 {
+        font-size: 8pt; 
+    }  
+}
+@media (max-width: 250px) {
+    .sostav{
+        height: 80vh;
+    }
+    .box{
+        margin-top: 10px;
+        padding: 5px; 
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+}
+
