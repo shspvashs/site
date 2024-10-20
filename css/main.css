@@ -1,0 +1,249 @@
+main {
+    background-color: rgb(255, 255, 255);
+    margin:20pt;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    padding: 15pt;
+}
+
+.header-title{
+    color: #393023;
+    font-family: "Marck Script", cursive;
+    font-weight: 500;
+    font-size: 10vw;
+    text-align: center;
+}
+
+.header-subtitle{
+    color: #393023;
+    font-family: "Marck Script", cursive;
+    font-weight: 500;
+    font-size: 3.5vw;
+    height: 5px;
+    display: block;
+}
+
+.header_banner{
+    background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0.74), rgb(255, 255, 255)), url("../img/phone_mob.jpg");
+    background-size: cover;
+}
+
+a{
+    font-family: "Marck Script", cursive;
+    color: #ffffff;
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+}
+
+a.buttons {
+    height: 30px;
+    padding-top: 9pt;
+    text-decoration: none;
+    text-align: center;
+    line-height: 20px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    width: 200pt;
+    background-color:#393023;
+}
+
+
+h2 {
+    font-size: larger;
+    text-align: center;
+}
+
+.module h2{
+    text-align: center;
+}
+
+.module {
+    background-color: rgb(255, 255, 255);
+    width: 20vw;
+    min-height: 300px;
+    margin:10pt;
+    padding: 10pt;
+    display: flex;
+    flex-direction: column;
+}
+
+.module_container{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.ing{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.prig{
+    padding-left: 10pt;
+    text-align: justify;
+    text-indent: 15px;
+}
+.prig li{
+    margin-bottom: 10px;
+}
+
+.second.module{
+    background-color: #393023;
+    color: #ffffff;
+    align-self: center;
+}
+
+.tip{
+    margin-bottom: 20px;
+    padding-left: 30px;
+    text-align: justify;
+    font-size: 12pt;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    text-indent: 30px;
+    margin-left: 10pt;
+    margin-right: 10pt;
+}
+
+.reviews {
+    margin-top: 30pt;
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px; 
+}
+.review {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 30%; 
+    text-align: center;
+}
+.review img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover; 
+}
+.review p {
+    font-size: 14px;
+    color: #555;
+    margin: 10px 0;
+    text-align: center;
+}
+.review h3 {
+    font-size: 16px;
+    margin-top: 5px;
+    color: #333;
+    font-family: "Marck Script", cursive;
+}
+
+p{
+    text-align: justify;
+}
+
+section{
+    padding: 10pt;
+}
+
+.box{
+    margin-top: 15px;
+    display: inline-block;
+    border: 2px solid rgb(255, 255, 255); 
+    padding: 10px; 
+    margin-bottom: 10px;
+    margin-right: 10px;
+    width: 200pt;
+    text-align: center;
+    align-self: center;
+}
+
+footer {
+    padding: 20px 20px; 
+    background-color: #1d1a17; 
+    margin-top: 30px; 
+    text-align: center;
+}
+
+footer p {
+    color: #ffffff; 
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+@media (max-width : 1750px) {
+    .module{
+        min-width: 500px;
+        min-height: 400px;
+        margin:10pt;
+        padding: 10pt;
+    }
+}
+@media (max-width : 1200px) {
+    .module{
+        min-width: 500px;
+        min-height: 400px;
+        flex-basis: 80%;
+        font-size: larger;
+        margin:10pt;
+        padding: 10pt;
+    }
+}
+@media (max-width : 900px) {
+    .module{
+        min-width: 350px;
+        min-height: 400px;
+        flex-basis: 90%;
+        font-size: larger;
+        margin:10pt;
+        padding: 10pt;
+    }
+    .reviews {
+        margin-top: 2pt;
+        display: flex;
+        justify-content: space-between; 
+        gap: 20px; 
+        flex-direction: column;
+    }
+    .review {
+        width: 88%;
+    }
+    footer p {
+        font-size: 10pt; 
+    }  
+    img{
+        width: 20pt; 
+        height: 20pt;
+    }
+}
+@media (max-width : 600px) {
+    header{
+        text-align: center;
+    }
+    .box{
+        margin-top: 10px;
+        padding: 8px; 
+        margin-bottom: 10px;
+        width: 180pt;
+    }
+    .module{
+        min-width: 240px;
+        min-height: 400px;
+        flex-basis: 90%;
+        font-size: larger;
+        margin:10pt;
+        padding: 10pt;
+    }
+    main{
+        margin:0pt;
+    }
+}
